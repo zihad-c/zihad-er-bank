@@ -46,11 +46,11 @@ depositBtn.addEventListener('click', function () {
     }
 
     else {
-        // clearing withdraw input field 
-        withdrawInput.value = "";
-
         // error message shown 
         errorMessage.style.display = "block";
+
+        // clearing the deposit input field
+        depositInput.value = "";
     }
 })
 
