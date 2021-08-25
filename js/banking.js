@@ -22,6 +22,7 @@ depositBtn.addEventListener('click', function () {
         const depositTotalInNumber = parseFloat(depositTotalInText);
         depositTotal.innerText = depositInputValueInNumber;
         const newDepositTotal = depositInputValueInNumber + depositTotalInNumber;
+
         // clearing the deposit input field
         depositInput.value = "";
 
@@ -46,11 +47,12 @@ depositBtn.addEventListener('click', function () {
     }
 
     else {
-        // error message shown 
-        errorMessage.style.display = "block";
 
         // clearing the deposit input field
         depositInput.value = "";
+
+        // error message shown 
+        errorMessage.style.display = "block";
     }
 })
 
@@ -106,11 +108,12 @@ withdrawBtn.addEventListener('click', function () {
     }
 
     else {
+        // clearing withdraw input field 
+        withdrawInput.value = "";
+
         // error message shown 
         errorMessage.style.display = "block";
 
-        // clearing withdraw input field 
-        withdrawInput.value = "";
     }
 
 })
