@@ -46,6 +46,9 @@ depositBtn.addEventListener('click', function () {
     }
 
     else {
+        // clearing withdraw input field 
+        withdrawInput.value = "";
+
         // error message shown 
         errorMessage.style.display = "block";
     }
@@ -70,7 +73,6 @@ withdrawBtn.addEventListener('click', function () {
 
         // convert withdraw input value in number 
         const withdrawInputValueInNumber = parseFloat(withdrawInputValueInText)
-
 
         // getting withdraw total text 
         const withdrawTotal = document.getElementById('withdraw-total');
@@ -106,6 +108,9 @@ withdrawBtn.addEventListener('click', function () {
     else {
         // error message shown 
         errorMessage.style.display = "block";
+
+        // clearing withdraw input field 
+        withdrawInput.value = "";
     }
 
 })
